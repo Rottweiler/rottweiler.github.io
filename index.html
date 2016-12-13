@@ -18,10 +18,10 @@
 			html, body, bannerarea {
 				Height: 100%;
 				Overflow: Hidden;
+				Background-Color: #34495e;
 			}
 			* {
 				Font-Family: Helvetica Neue, Helvetica, Arial;
-				Background-Color: #34495e;
 			}
 			body {
 				Color: #ecf0f1;
@@ -35,19 +35,38 @@
 				Height: 100%;
 				Box-Sizing: border-box;
 			}
+			.col-centered{
+				float: none;
+				margin: 0 auto;
+			}
 		</style>
 	</head>
 	<body>
 		<section class="bannerarea">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-							<h1>Index - Download Rottweiler's tools</h1>
-							<h2>Downloads</h2>
-							<ul>
-								<li>(Mono.NET) Get administrator shell on any Windows machine <a href="shell.exe">shell.exe</a></li>
-							</ul>
+			
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+					  <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-apple"></span> Rottweiler's Tools</a>
+					  <p class="navbar-text">Download compiled tools</p>
 					</div>
+
+				  </div><!-- /.container-fluid -->
+				</nav>
+				
+				<div class="container-fluid">
+					<h3><span class="glyphicon glyphicon-floppy-disk"></span> Downloads</h3>
+					<ul>
+						<li>(Mono.NET) Get administrator shell on any Windows machine <a href="shell.exe">shell.exe</a></li>
+					</ul>
 				</div>
 			</div>
 		</section>
