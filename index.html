@@ -31,17 +31,13 @@
 		
 		<script>
 			$(function() {
-				$("#result").hide();
-				
 				$("#board-calculator").change(function(event) {
-					$("#result").show();
 					var board = $("#board-length").val();
 					var desired = $("#desired-length").val();
 					var result = calculate(board, desired);
 				});
 				
 				$("#board-desired").change(function(event) {
-					$("#result").show();
 					var board = $("#board-length").val();
 					var desired = $("#desired-length").val();
 					var result = calculate(board, desired);
