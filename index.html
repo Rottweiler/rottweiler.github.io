@@ -14,10 +14,11 @@
 			
 			<hr />
 			
-			<form id="board-calculator" class="form">
+			<div class="container">
 				<span id="result" class="alert alert-info"></span>
-				
-				<hr />
+			</div>
+			
+			<form id="board-calculator" class="form">
 				
 				<label for="board-length">Current length</label>
 				<input id="board-length" class="form-control" type="number" value="96" />
@@ -33,12 +34,14 @@
 				$("#result").hide();
 				
 				$("#board-calculator").change(function(event) {
+					$("#result").show();
 					var board = $("#board-length").val();
 					var desired = $("#desired-length").val();
 					var result = calculate(board, desired);
 				});
 				
 				$("#board-desired").change(function(event) {
+					$("#result").show();
 					var board = $("#board-length").val();
 					var desired = $("#desired-length").val();
 					var result = calculate(board, desired);
