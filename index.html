@@ -37,6 +37,7 @@
 					var board = $("#board-length").val();
 					var desired = $("#desired-length").val();
 					var result = calculate(board, desired);
+					$("#result").html("Set your saw to " + result);
 					void(0);
 					return false;
 				});
