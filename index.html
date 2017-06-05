@@ -25,22 +25,20 @@
 				
 				<label for="desired-length">Desired length</label>
 				<input id="desired-length" class="form-control" type="number" />
+				
+				<input class="form-control" type="submit" />
 			</form>
 		</div>
 
 		
 		<script>
 			$(function() {
-				$("#board-calculator").change(function(event) {
+				$("#board-calculator").submit(function(event) {
 					var board = $("#board-length").val();
 					var desired = $("#desired-length").val();
 					var result = calculate(board, desired);
-				});
-				
-				$("#board-desired").change(function(event) {
-					var board = $("#board-length").val();
-					var desired = $("#desired-length").val();
-					var result = calculate(board, desired);
+					void(0);
+					return false;
 				});
 			});
 			
