@@ -14,11 +14,11 @@
 			
 			<hr />
 			
-			<div class="container">
+			<div class="row">
 				<span id="result" class="alert alert-info"></span>
 			</div>
 			
-			<form id="board-calculator" class="form">
+			<form id="board-calculator" class="form row">
 				
 				<label for="board-length">Current length</label>
 				<input id="board-length" class="form-control" type="number" value="96" />
@@ -44,7 +44,7 @@
 			});
 			
 			function calculate(board, desired) {
-				return (parseFloat(board) - parseFloat(desired)) - .25;
+				return (parseFloat(board) - parseFloat(desired)) - .50;
 			}
 		</script>
 	</body>
